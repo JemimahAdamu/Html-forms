@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <section>
+        <fieldset>
+            <legend>1 Your Basic Info</legend>
+            <form action="">
+                <label for="firstlast">Name:</label>
+                <input type="text" name="fullname" id="firstlast">
+                <label for="emailaddress">Email:</label>
+                <input type="email" name="email" id="emailaddress">
+                <label for="enterpassword">Password:</label>
+                <input type="password" name="password" id="enterpassword">
+                <label for="age">Age:</label>
+                <label>
+                    <input type="radio" name="under13" value="below13">Under 13 </label>
+                <p>
+                    <label>
+                        <input type="radio" name="over13" value="below13">Over 13 </label>
+                </p>
+            </form>
+        </fieldset>
+
+        <p>
+        <fieldset>
+            <legend>2 Your Profile</legend>
+            <label for="Bio">Bio:</label>
+            <input type="text" name="Bio" id="Bio">
+            <label for="Job Role">Job Role:</label>
+            <select name="job role" id="Job Role">
+                <optgroup label="Web"> 
+                <option value="user interface">Front-End Developer</option>
+                <option value="Design websiites for companies">Web Designer</option>
+                <option value="Develop webites with opensource">Wordpress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile"> 
+                <option value="user interface">Mobile</option>
+                <option value="Develop Apps for Android">Android Developer</option>
+                <option value="Develop Apps for Apple">IOS Developer</option>
+                </optgroup>
+                <optgroup label="Business"> 
+                <option value="Entrepreneur">Business Owner</option>
+                <option value="Work for self">Freelancer</option>
+                </optgroup>
+            </select>
+            <label for="interests">Interests:</label>
+            <input type="checkbox" name="Development" id="development">
+            <label for="development">Development</label>
+            <p>
+                <input type="checkbox" name="Design" id="design">
+                <label for="design">Design</label>
+            </p>
+            <p>
+                <input type="checkbox" name="Business" id="business">
+                <label for="business">Business</label>
+            </p>
+        </fieldset>
+        </p>
+        <textarea placeholder="additional information" name="comment" cols="30" rows="10"></textarea>
+        <p>
+        <button type="submit"><span style="color:red">Signup</span></button>
+        </p>
+    </section>
+</body>
+
+</html>
